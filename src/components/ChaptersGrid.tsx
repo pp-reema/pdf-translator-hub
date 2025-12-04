@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChapterCard } from './ChapterCard';
 import climateFundamentals from '@/assets/climate-fundamentals.jpg';
@@ -20,6 +21,7 @@ const chapters = [
 
 export const ChaptersGrid = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   return (
     <section id="chapters" className="py-20 md:py-32 bg-background">
@@ -40,7 +42,10 @@ export const ChaptersGrid = () => {
               className="animate-slide-up"
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              <ChapterCard {...chapter} />
+              <ChapterCard 
+                {...chapter} 
+                onClick={() => navigate(`/chapter/${chapter.number}`)}
+              />
             </div>
           ))}
         </div>
