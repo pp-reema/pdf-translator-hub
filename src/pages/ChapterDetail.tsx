@@ -18,7 +18,7 @@ const chapterImages: Record<number, string> = {
 const chapterContent: Record<number, { keyFacts: string[]; actions: string[]; content: string[] }> = {
   1: {
     keyFacts: [
-      'The greenhouse effect is essential for life on Earth, maintaining temperatures 33°C warmer than without it.',
+      'The greenhouse effect is  for life on Earth, maintaining temperatures 33°C warmer than without it.',
       'CO₂ levels have risen from 280 ppm pre-industrial to over 420 ppm today.',
       'The rate of change is unprecedented - current warming is 10 times faster than ice-age recovery.',
       'We are already experiencing 1.1°C of warming above pre-industrial levels.',
