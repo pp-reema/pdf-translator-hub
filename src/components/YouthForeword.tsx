@@ -7,12 +7,9 @@ import logoVillars from '@/assets/villars.png';
 import asu from '@/assets/asu.png';
 import care from '@/assets/care.png';
 import exeter from '@/assets/exeter.png';
-import qr from '@/assets/qr.png';
 import we from '@/assets/we.png';
 import yna from '@/assets/yna.png';
-
-
-import logoCareAboutClimate from '@/assets/logo-care-about-climate.jpg';
+import qr from '@/assets/qr.png';
 
 export const YouthForeword = () => {
   return (
@@ -31,48 +28,57 @@ export const YouthForeword = () => {
             <p className="text-center text-muted-foreground text-sm mb-6">Youth Foreword authored by</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
               {/* ASU */}
-              <div className="flex flex-col items-center text-center p-4 bg-card rounded-xl shadow-sm">
-                <span className="font-bold text-primary text-lg">ASU</span>
-                <span className="text-xs text-muted-foreground mt-1">Julie Ann Wrigley<br/>Global Futures Laboratory</span>
-                <span className="text-xs text-muted-foreground">Arizona State University</span>
+              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
+                <img 
+                  src={asu} 
+                  alt="ASU Julie Ann Wrigley Global Futures Laboratory" 
+                  className="h-16 object-contain"
+                />
               </div>
               
               {/* University of Exeter */}
-              <div className="flex flex-col items-center text-center p-4 bg-card rounded-xl shadow-sm">
+              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
                 <img 
                   src={exeter} 
-                  alt="University of Exeter " 
-                  className="h-12 object-contain invert"
+                  alt="University of Exeter" 
+                  className="h-16 object-contain"
                 />
               </div>
               
               {/* Villars Institute */}
-              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm">
+              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
                 <img 
                   src={logoVillars} 
                   alt="Villars Institute" 
-                  className="h-12 object-contain invert"
+                  className="h-16 object-contain"
                 />
               </div>
               
               {/* We */}
-              <div className="flex flex-col items-center text-center p-4 bg-card rounded-xl shadow-sm">
-                <span className="font-bold text-primary text-3xl">we)</span>
+              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
+                <img 
+                  src={we} 
+                  alt="We" 
+                  className="h-16 object-contain"
+                />
               </div>
               
               {/* Care About Climate */}
-              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm">
+              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
                 <img 
-                  src={logoCareAboutClimate} 
+                  src={care} 
                   alt="Care About Climate" 
-                  className="h-10 object-contain"
+                  className="h-16 object-contain"
                 />
               </div>
               
               {/* Youth Negotiators Academy */}
-              <div className="flex flex-col items-center text-center p-4 bg-card rounded-xl shadow-sm">
-                <span className="font-bold text-accent text-2xl">'N.</span>
-                <span className="text-xs text-muted-foreground">Youth Negotiators<br/>Academy</span>
+              <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
+                <img 
+                  src={yna} 
+                  alt="Youth Negotiators Academy" 
+                  className="h-16 object-contain"
+                />
               </div>
             </div>
           </div>
@@ -160,23 +166,11 @@ export const YouthForeword = () => {
 
               {/* QR Code Section */}
               <div className="bg-card p-6 rounded-2xl shadow-card flex items-center gap-6">
-                <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center border-2 border-primary">
-                  <div className="text-center">
-                    <div className="grid grid-cols-5 gap-0.5 w-16 h-16 mx-auto">
-                      {/* QR Code Pattern */}
-                      {[...Array(25)].map((_, i) => (
-                        <div 
-                          key={i} 
-                          className={`w-3 h-3 ${
-                            [0,1,2,4,5,6,10,12,14,15,16,18,19,20,21,22,24].includes(i) 
-                              ? 'bg-foreground' 
-                              : 'bg-transparent'
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                <img 
+                  src={qr} 
+                  alt="QR Code for Youth Foreword" 
+                  className="w-24 h-24 object-contain rounded-lg"
+                />
                 <div>
                   <p className="font-semibold text-foreground">Scan for more info</p>
                   <p className="text-sm text-muted-foreground">Learn more about the Youth Foreword and endorsers</p>
