@@ -3,7 +3,15 @@ import youthImg2 from '@/assets/youth-foreword-img2.jpg';
 import youthImg3 from '@/assets/youth-foreword-img3.jpg';
 import youthImg4 from '@/assets/youth-foreword-img4.jpg';
 import youthImg5 from '@/assets/youth-foreword-img5.jpg';
-import logoVillars from '@/assets/logo-villars.png';
+import logoVillars from '@/assets/villars.png';
+import asu from '@/assets/asu.png';
+import care from '@/assets/care.png';
+import exeter from '@/assets/exeter.png';
+import qr from '@/assets/qr.png';
+import we from '@/assets/we.png';
+import yna from '@/assets/yna.png';
+
+
 import logoCareAboutClimate from '@/assets/logo-care-about-climate.jpg';
 
 export const YouthForeword = () => {
@@ -31,8 +39,11 @@ export const YouthForeword = () => {
               
               {/* University of Exeter */}
               <div className="flex flex-col items-center text-center p-4 bg-card rounded-xl shadow-sm">
-                <span className="font-bold text-primary text-lg">University</span>
-                <span className="font-bold text-primary text-lg">of Exeter</span>
+                <img 
+                  src={exeter} 
+                  alt="University of Exeter " 
+                  className="h-12 object-contain invert"
+                />
               </div>
               
               {/* Villars Institute */}
