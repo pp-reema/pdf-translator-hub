@@ -89,7 +89,7 @@ export const YouthForeword = () => {
             <div className="space-y-6">
               {/* Large Quote */}
               <div className="bg-primary text-primary-foreground p-8 rounded-2xl">
-                <p className="font-display font-semibold text-xl md:text-2xl italic leading-relaxed">
+                <p className="font-display text-4xl md:text-5xl font-semibold text-foreground">
 
                   "As young people, we often look to our elders for guidance. From you, we develop our values, our ethics, and our worldview. We owe you our opportunities and privileges. We share your values of security, prosperity, and opportunity.
                 </p>
