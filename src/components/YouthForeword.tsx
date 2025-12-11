@@ -10,8 +10,11 @@ import exeter from '@/assets/exeter.png';
 import we from '@/assets/we.png';
 import yna from '@/assets/yna.png';
 import qr from '@/assets/qr.png';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const YouthForeword = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="youth-foreword" className="py-20 md:py-32 bg-muted">
       <div className="container mx-auto px-4">
@@ -19,13 +22,13 @@ export const YouthForeword = () => {
           {/* Section Header */}
           <div className="text-center mb-8">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-              Youth Foreword
+              {t('youth.title')}
             </h2>
           </div>
 
           {/* Youth Foreword authored by - 6 Logos */}
           <div className="mb-12">
-            <p className="text-center text-muted-foreground text-sm mb-6">Youth Foreword authored by</p>
+            <p className="text-center text-muted-foreground text-sm mb-6">{t('youth.authoredBy')}</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
               {/* ASU */}
               <div className="flex items-center justify-center p-4 bg-card rounded-xl shadow-sm h-24">
@@ -90,46 +93,46 @@ export const YouthForeword = () => {
               {/* Large Quote */}
               <div className="bg-primary text-primary-foreground p-8 rounded-2xl">
                 <p className="font-display text-xl md:text-2xl italic leading-relaxed">
-                  "As young people, we often look to our elders for guidance. From you, we develop our values, our ethics, and our worldview. We owe you our opportunities and privileges. We share your values of security, prosperity, and opportunity.
+                  "{t('youth.quote1')}"
                 </p>
               </div>
 
               {/* Main Content */}
               <div className="space-y-4 text-foreground leading-relaxed">
                 <p className="font-display text-xl md:text-2xl italic">
-                  But it's a strange time to be young. "Go to school, get a job, work towards your future". We wonder, what will our futures look like?
+                  {t('youth.quote2')}
                 </p>
                 
                 <p>
-                  The 1.5°C threshold is passing, 2.0°C is fast approaching. We call on you to follow through on the climate goals that you set, to be transparent and accountable. Our futures are at stake.
+                  {t('youth.content1')}
                 </p>
                 
                 <p>
-                  Human well-being depends on planetary health. Indigenous wisdoms have maintained for millennia the belief that humanity and the natural world are intimately connected. Our futures depend upon combining these ancient wisdoms with modern day technological capabilities, environmental stewardship, and a decisive political will.
+                  {t('youth.content2')}
                 </p>
                 
                 <p>
-                  The science is clear. The technologies exist. The challenge that remains is a lack of implementation. The IMF estimates there is an astounding $7.1 trillion per annum in fossil fuel subsidies. We need new economic structures and incentives to scale global solutions, and we need to act now. This is no longer a distant warning, we are living in the age of consequence.
+                  {t('youth.content3')}
                 </p>
                 
                 <p>
-                  The International Court of Justice is on our side, affirming what young people across the globe have been saying for years: our governments have a legal obligation to act on climate change. As the current leaders and policymakers, we require your brave and authentic leadership to navigate this age of complexity and uncertainty, to chart a sustainable path forward.
+                  {t('youth.content4')}
                 </p>
                 
                 <p>
-                  This must be done together, across disciplines, countries, genders, and generations.
+                  {t('youth.content5')}
                 </p>
                 
                 <p>
-                  One concrete step parties can take to align international commitments with intergenerational justice is to adopt the Universal Youth Clause into their updated Nationally Determined Contributions. We call on all governments to honour our right to a healthy environment and a climate just future for generations to come.
+                  {t('youth.content6')}
                 </p>
                 
                 <p className="font-display text-xl italic">
-                  As young people, we often look to our elders for guidance. Do they know that they can look to us, too?
+                  {t('youth.closingQuote')}
                 </p>
                 
                 <p className="text-sm text-muted-foreground font-semibold">
-                  Endorsers of the Youth Foreword can be found on page 26.
+                  {t('youth.endorsersNote')}
                 </p>
               </div>
             </div>
@@ -172,8 +175,8 @@ export const YouthForeword = () => {
                   className="w-24 h-24 object-contain rounded-lg"
                 />
                 <div>
-                  <p className="font-semibold text-foreground">Scan for more info</p>
-                  <p className="text-sm text-muted-foreground">Learn more about the Youth Foreword and endorsers</p>
+                  <p className="font-semibold text-foreground">{t('youth.scanForMore')}</p>
+                  <p className="text-sm text-muted-foreground">{t('youth.learnMore')}</p>
                 </div>
               </div>
             </div>
@@ -181,11 +184,11 @@ export const YouthForeword = () => {
 
           {/* IMF Stat Highlight */}
           <div className="mt-12 p-8 rounded-2xl bg-gradient-ocean text-primary-foreground text-center">
-            <p className="text-lg opacity-90 mb-2">The IMF estimates</p>
+            <p className="text-lg opacity-90 mb-2">{t('youth.imfEstimates')}</p>
             <p className="font-display text-4xl md:text-5xl font-bold mb-2">
-              $7.1 trillion/year
+              {t('youth.imfAmount')}
             </p>
-            <p className="text-lg opacity-90">in fossil fuel subsidies</p>
+            <p className="text-lg opacity-90">{t('youth.imfSubsidies')}</p>
           </div>
         </div>
       </div>
