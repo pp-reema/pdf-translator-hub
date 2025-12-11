@@ -88,17 +88,15 @@ export const YouthForeword = () => {
             {/* Left Column - Quote and Text */}
             <div className="space-y-6">
               {/* Large Quote */}
-              <div className="bg-primary text-primary-foreground p-6 rounded-xl">
-                <p className="font-display text-xl md:text-2xl font-semibold leading-relaxed tracking-tight">
- 
-
+              <div className="bg-primary text-primary-foreground p-8 rounded-2xl">
+                <p className="font-display text-xl md:text-2xl italic leading-relaxed">
                   "As young people, we often look to our elders for guidance. From you, we develop our values, our ethics, and our worldview. We owe you our opportunities and privileges. We share your values of security, prosperity, and opportunity.
                 </p>
               </div>
 
               {/* Main Content */}
               <div className="space-y-4 text-foreground leading-relaxed">
-                <p>
+                <p className="font-display text-xl md:text-2xl italic">
                   But it's a strange time to be young. "Go to school, get a job, work towards your future". We wonder, what will our futures look like?
                 </p>
                 
@@ -126,7 +124,7 @@ export const YouthForeword = () => {
                   One concrete step parties can take to align international commitments with intergenerational justice is to adopt the Universal Youth Clause into their updated Nationally Determined Contributions. We call on all governments to honour our right to a healthy environment and a climate just future for generations to come.
                 </p>
                 
-                <p>
+                <p className="font-display text-xl italic">
                   As young people, we often look to our elders for guidance. Do they know that they can look to us, too?
                 </p>
                 
