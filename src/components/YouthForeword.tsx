@@ -89,7 +89,8 @@ export const YouthForeword = () => {
             <div className="space-y-6">
               {/* Large Quote */}
               <div className="bg-primary text-primary-foreground p-8 rounded-2xl">
-                <p className="font-display text-4xl md:text-5xl font-semibold text-foreground">
+                <p className="font-display text-3xl md:text-4xl font-semibold leading-snug tracking-tight">
+ 
 
                   "As young people, we often look to our elders for guidance. From you, we develop our values, our ethics, and our worldview. We owe you our opportunities and privileges. We share your values of security, prosperity, and opportunity.
                 </p>
@@ -125,7 +126,7 @@ export const YouthForeword = () => {
                   One concrete step parties can take to align international commitments with intergenerational justice is to adopt the Universal Youth Clause into their updated Nationally Determined Contributions. We call on all governments to honour our right to a healthy environment and a climate just future for generations to come.
                 </p>
                 
-                <p className="font-display text-xl italic">
+                <p>
                   As young people, we often look to our elders for guidance. Do they know that they can look to us, too?
                 </p>
                 
