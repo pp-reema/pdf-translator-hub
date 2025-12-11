@@ -88,8 +88,8 @@ export const YouthForeword = () => {
             {/* Left Column - Quote and Text */}
             <div className="space-y-6">
               {/* Large Quote */}
-              <div className="bg-primary text-primary-foreground p-8 rounded-2xl">
-                <p className="font-display text-3xl md:text-4xl font-semibold leading-snug tracking-tight">
+              <div className="bg-primary text-primary-foreground p-6 rounded-xl">
+                <p className="font-display text-2xl md:text-3xl font-semibold leading-snug tracking-tight">
  
 
                   "As young people, we often look to our elders for guidance. From you, we develop our values, our ethics, and our worldview. We owe you our opportunities and privileges. We share your values of security, prosperity, and opportunity.
